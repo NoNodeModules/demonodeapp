@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="download.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="compact marquee-stacked" id="marquee">
+            <div class="marquee-copy">
+                <h1>
+                    <p class="text-center">Transcription App. </p>
+                </h1>
+                <h2>
+                    <p class="text-center">Your file is created. download your file..! </p>
+                </h2>
+
+            </div>
+        </div>
+
+        <div class="d-grid gap-5 d-md-block">
+            <button class="btn btn-primary btn-lg" id="btn_download"><b>Download</b></button>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="d-grid gap-5 d-md-block">
+            <input type="file" name="inputfile" class="file" id="inputfile" >
+        </div>
+        <br>
+        <br>
+
+        <div class="form-group">
+            <textarea class="form-control2" id="exampleFormControlTextarea3" rows="26" cols="74"></textarea>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#btn_download").click(function () {
+            window.open('/download');
+        })
+
+        document.getElementById('inputfile')
+            .addEventListener('change', function () {
+
+                var fr = new FileReader();
+                fr.onload = function () {
+                    document.getElementById('exampleFormControlTextarea3')
+                        .textContent = fr.result;
+                }
+
+                fr.readAsText(this.files[0]);
+                console.log('hello')
+            }) 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+@import "https://fonts.googleapis.com/css?family=Lato:300,700";
+
+body {
+   background: url('purple.jpg');
+   /*background-color: #00bfff  ;*/
+   background-size: cover;
+   height: 100vh;
+   color: #888;
+   font-family: "Lato", sans-serif;
+}
+
+h1 {
+   font-weight: 300;
+}
+
+p {
+   text-align: center;
+   font-weight: 700;
+   color: #ffb3d9;
+}
+
+.content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.form-control2 {
+   padding: 50px;
+   min-height: 350px;
+   margin: 20px;
+   border-radius: 5px;
+   position: relative;
+}
+
+.form-control {
+   width: 20px;
+   padding: 15px;
+}
+
+.btn {
+   text-align: center;
+   position: relative;
+   margin: 20px;
+   margin-left: 50px;
+   padding: 45px;
+}
+
+.marquee {
+   margin: 20px auto;
+}
+
+.file {
+   text-align: center;
+   margin-left: 50px;
+}

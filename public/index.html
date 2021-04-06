@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <!-- <link rel="stylesheet" type="text/css" href="newstyle.css"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+</head>
+<style>
+table{
+  margin: auto;
+  width: 60%;
+}
+ td,  th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+ tr:nth-child(even){background-color: #f2f2f2;}
+
+ tr:hover {background-color: #ddd;}
+
+ th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+       html{
+        scroll-behavior: smooth;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+
+    }
+.lds-roller {
+   display: inline-block;
+   position: relative;
+   width: 80px;
+   height: 80px;
+ }
+ .lds-roller div {
+   animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+   transform-origin: 40px 40px;
+ }
+ .lds-roller div:after {
+   content: " ";
+   display: block;
+   position: absolute;
+   width: 7px;
+   height: 7px;
+   border-radius: 50%;
+   background: rgb(48, 37, 197);
+   margin: -4px 0 0 -4px;
+ }
+ .lds-roller div:nth-child(1) {
+   animation-delay: -0.036s;
+ }
+ .lds-roller div:nth-child(1):after {
+   top: 63px;
+   left: 63px;
+ }
+ .lds-roller div:nth-child(2) {
+   animation-delay: -0.072s;
+ }
+ .lds-roller div:nth-child(2):after {
+   top: 68px;
+   left: 56px;
+ }
+ .lds-roller div:nth-child(3) {
+   animation-delay: -0.108s;
+ }
+ .lds-roller div:nth-child(3):after {
+   top: 71px;
+   left: 48px;
+ }
+ .lds-roller div:nth-child(4) {
+   animation-delay: -0.144s;
+ }
+ .lds-roller div:nth-child(4):after {
+   top: 72px;
+   left: 40px;
+ }
+ .lds-roller div:nth-child(5) {
+   animation-delay: -0.18s;
+ }
+ .lds-roller div:nth-child(5):after {
+   top: 71px;
+   left: 32px;
+ }
+ .lds-roller div:nth-child(6) {
+   animation-delay: -0.216s;
+ }
+ .lds-roller div:nth-child(6):after {
+   top: 68px;
+   left: 24px;
+ }
+ .lds-roller div:nth-child(7) {
+   animation-delay: -0.252s;
+ }
+ .lds-roller div:nth-child(7):after {
+   top: 63px;
+   left: 17px;
+ }
+ .lds-roller div:nth-child(8) {
+   animation-delay: -0.288s;
+ }
+ .lds-roller div:nth-child(8):after {
+   top: 56px;
+   left: 12px;
+ }
+ @keyframes lds-roller {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+ 
+</style>
+<body>
+
+
+  <section id="home">
+    <div class="site-blocks-cover "  >
+      
+        <div class="row justify-content-center align-self-center">
+            <div class="col-md-6 " style="background-color: #45b6ed; padding: 2%;">
+              
+                <img style="padding: 4%;" src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3BlYWt8ZW58MHx8MHw%3D&ixlib=rb-1.2.1" alt="Image" class="img-fluid">
+                <h1 class="text-white poppins text-left pl-4" >Add <span class="text-warning">speech/audio</span> <br> to <span class="text-success">text</span> capabilities to your applications<span class="text-dark">.</span><span class="text-primary">.</span><span class="text-warning">.</span></h1>
+
+                
+    
+            </div>
+        
+        <div class="col-lg-6 container mr-auto " style="background-color: #2d4d96;padding:9%; height: 100vh;">
+        <h1 class="text-white poppins align-middle" >Get transcribed text <br> files with highest level of <span class="text-primary">accuracy</span>.</h1>
+        <h3 class="mb-5   poppins" style="color: rgba(240, 248, 255, 0.603);">Getting transcribed files is never been easier
+                <br>
+                <br>
+                 <li class="text-white">Upload the audio file <span class="text-warning"><span class="material-icons">backup </span></span> </li> 
+                 <li class="text-white">Download the <span class="text-primary">transcribed</span> text file <span class="text-success"><span class="material-icons">download </span></span> </li> 
+                    
+        </h3>
+        <a href="#demo" class="btn btn-primary btn-lg mr-2 m-2 ">Try it</a>
+     
+        </div>
+        
+        </div>
+       
+        </div>
+    </section>
+
+
+
+<!-- Main code -->
+
+<div class="content " id='demo' style="background-color: #cad6f1; padding: 2%;">
+  <div class="compact marquee-stacked container " id="marquee">
+      <div class="marquee-copy text-center">
+          <h1 >
+              Put Speech-to-Text into action
+          </h1>
+          <h3>As in this demo, you can easily infuse speech transcription into your applications with our easy to integrate Speech-to-text app.</h3>
+      </div>
+  </div>
+  
+  <br>
+  <br>
+
+  <form action="/" method="POST" enctype="multipart/form-data">
+      <div class=" text-center  d-md-block bg-secondary p-5">
+          <input type='file' id='audio_file' class="btn btn-primary btn-lg m-3" name='audio_file'></input>
+          <br>
+          <button type="submit" onsubmit="stopreload()" id="convert" onclick='loader()' name="convert" class="btn btn-primary btn-lg"><b> Convert</b>
+          </button>
+      
+        </div>
+  </form>
+  <div class="lds-roller text-center" id='loader' style="display: none;"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+
+</div>
+   
+
+
+
+<div class="content" id='textfile' style="display: none;">
+  <div class="compact marquee-stacked" id="marquee">
+      <div class="marquee-copy">
+          <h1>
+              <p class="text-center">Audio file is successfully transcribed!</p>
+          </h1>
+          <h4>
+              <p class="text-center">Download the transcribed text file by clicking on the download button below. </p>
+          </h4>
+
+      </div>
+  </div>
+
+  <div class="text-center">
+      <button class="btn btn-primary btn-lg " id="btn_download"><b>Download</b></button>
+  </div>
+  <br>
+  <br>
+  <br>
+
+ <div class="text-center">
+  Background color of the text indicates overall sentiment
+ </div> 
+  <div class="text-left container text-dark" >
+    <div class="row">
+        <div class="col-3 bg-danger" id='Negative' >
+            Negative Sentiment
+        </div>
+
+        <div class="col-3 bg-success" id='Positive'>
+          Positive Sentiment
+      </div>
+
+      <div class="col-3 bg-info" id='Mixed'>
+        Mixed Sentiment
+    </div>
+
+    <div class="col-3 bg-secondary" id='Neutral'>
+      Neutral Sentiment
+  </div>
+
+    </div>
+    <p class="text-dark" id='transcribedtext'>
+
+    </p>
+  </div>
+
+  <div id='entity'>
+    <h1 class="text-center">Our entity extraction analysis</h1>
+    <table id="entity_table">
+      <tr>
+        <th>Text</th>
+        <th>Type</th>
+       
+      </tr>
+    </table>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $("#btn_download").click(function () {
+      window.open('/download');
+  })
+  function loader(){
+        document.getElementById('loader').style.display = 'block';
+       }
+
+ 
+
+
+var apiInterval = setInterval(async function(){
+    const response = await fetch('http://localhost:8000/loaded',{
+            mode: 'no-cors'}).catch(err => console.error(err));
+    const text = await response.text();
+    const Json = (JSON.parse(text))
+    //console.log(Json)
+    if(Json.message == 'file transcribed'){
+     
+      const response1 = await fetch('http://localhost:8000/api').catch(err => console.error(err));
+      const text1 = await response1.text();
+      const JsonEnd = (JSON.parse(text1))
+      console.log(JsonEnd.message);
+      //console.log(JsonEnd.entities);
+      var entity = JsonEnd.entities.Entities;
+
+
+      entity.forEach(element => {
+       console.log(element.Text,element.Type) 
+       var x = document.createElement("TBODY");
+      var y = document.createElement("TR");
+      var z = document.createElement("TD");
+      
+      z.innerHTML = `${element.Text} `
+  
+      y.appendChild(z);
+      var z = document.createElement("TD");
+      z.innerHTML = `${element.Type} `
+      y.appendChild(z);
+
+      x.appendChild(y);
+      document.getElementById("entity_table").appendChild(x);
+      });
+
+
+      var overallSentiment = JsonEnd.sentiment.Sentiment.toLowerCase();
+      overallSentiment = overallSentiment.charAt(0).toUpperCase() + overallSentiment.slice(1);
+      console.log(overallSentiment)
+      var sentimentScore = JsonEnd.sentiment.SentimentScore;
+      console.log(sentimentScore[overallSentiment])
+
+      document.getElementById('Negative').innerText = `Negative sentiment : ${sentimentScore['Negative']}`;
+      document.getElementById('Positive').innerText = `Positive sentiment : ${sentimentScore['Positive']}`;
+      document.getElementById('Mixed').innerText = `Mixed sentiment : ${sentimentScore['Mixed']}`;
+      document.getElementById('Neutral').innerText = `Neutral sentiment : ${sentimentScore['Neutral']}`;
+
+      if(overallSentiment == 'Negative'){
+        document.getElementById('transcribedtext').style.backgroundColor = `rgba(255,0,0,${sentimentScore[overallSentiment]})`
+      }
+
+      if(overallSentiment == 'Positive'){
+        document.getElementById('transcribedtext').style.backgroundColor = `rgba(0,255,0,${sentimentScore[overallSentiment]})`
+      }
+
+      if(overallSentiment == 'Mixed'){
+        document.getElementById('transcribedtext').style.backgroundColor = `rgba(0,0,255,${sentimentScore[overallSentiment]})`
+      }
+      
+      if(overallSentiment == 'Neutral'){
+        document.getElementById('transcribedtext').style.backgroundColor = `rgba(0,0,0,${sentimentScore[overallSentiment]})`
+      }
+      
+      clearInterval(apiInterval);
+      document.getElementById('loader').style.display = 'none';
+      document.getElementById('textfile').style.display = 'block';
+      document.getElementById('transcribedtext').innerText = JsonEnd.message;
+    }
+    else{
+      console.log(Json);
+    }
+  }, 4000);
+
+</script>
+</body>
+
+</html>
